@@ -16,6 +16,13 @@
   },
   "license": "MPL-2.0",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs"
+    }
+  },
   "main": "index.js",
   "files": [
     "dist"
@@ -37,7 +44,6 @@
     "@solvro/config": "^1.13.5",
     "@types/chai": "^5.2.2",
     "@types/chai-as-promised": "^8.0.2",
-    "@types/chai-spies": "^1.0.6",
     "@types/mocha": "^10.0.10",
     "chai": "^5.2.0",
     "chai-as-promised": "^8.0.1",
